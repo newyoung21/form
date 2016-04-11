@@ -52,7 +52,6 @@ validate.prototype={
 			return false;
 		},
 		passRepeat: function(vaule){
-			console.log(this.value);
 			if(vaule===this.value){
 				return true;
 			}else{
@@ -105,12 +104,10 @@ validate.prototype={
 			}
 			this.Allvaule[name]=value;//把数据存到对象里	
 		}
-		console.log(this.Allvaule);
 		this.proving();//验证数据
 		
 	},
 	proving2 : function(el){
-		console.log('多少次');
 		var value =$(el).val();
 			name = $(el).attr('name');
 			rule = this.rules[name];
