@@ -1,0 +1,200 @@
+ body,ul,li{
+ 	margin:0;
+ 	padding: 0;
+ }
+ a{
+ 	text-decoration: none;
+ 	color: #333;
+ }
+ body{
+ 	font: 12px/150% Arial,Verdana,"\5b8b\4f53";
+ 	font-size: 14px;
+ 	color:#666;
+ }
+ #header{
+ 	margin-top: 25px;
+ 	padding-bottom: 20px;
+ 	border-bottom: 4px solid #EAE7E7;
+ }
+ #header .h-left{
+ 	float: left;
+ }
+ .layout{
+ 	width: 1210px;
+ 	margin:0 auto;
+ }
+ #header .h-right{
+ 	float: right;
+ 	float: right;
+ 	margin-top: 38px;
+ 	font-size: 16px;
+ 	color:  #999;
+ }
+
+ .h-left .logo{
+ 	display: block;
+ 	background: url(../image/icon.png)  no-repeat;
+ 	width: 160px;
+ 	height: 50px;
+
+ }
+ .h-left ul{
+ 	list-style: none;
+ }
+ .h-left li{
+ 	float: left;
+ }
+ .h-left .bt{
+ 	border-left: solid 1px #bbb;
+ 	padding: 5px 20px;
+ 	color: #000;
+ 	font-size: 18px;
+ 	margin: 10px 0 0 25px;
+ }
+ .clear:after{
+ 	display: block;
+ 	height: 0;
+ 	content: "";
+ 	overflow: hidden;
+ 	clear: both;
+ }
+ .clearfix{
+ 	*zoom:1;
+ }
+ #main{
+ 	padding: 50px 180px 50px 200px;
+ 	border-bottom: 1px solid #ddd;
+ }
+ .form .form-s{
+ 	width: 398px;
+    height: 52px;
+    border: 1px solid #ddd;
+    line-height: 52px;
+    position: relative;
+ }
+ .form-s label{
+ 	padding: 0 30px;
+ }
+ .form-s input{
+ 	border: 0;
+ 	width: 190px;
+ 	height: 19px;
+ 	outline: medium;
+ }
+ .form-s img{
+ 	width: 110px;
+    height: 45px;
+    vertical-align: middle;
+    position: absolute;
+    top: 3px;
+    right: 3px;
+ }
+ input[name=authcode]{
+ 	width: 170px;
+ }
+  input[name=mobileCode]{
+ 	width: 160px;
+ }
+ button{
+ 	background: #f2f2f2;
+ 	height: 46px;
+ 	position: absolute;
+ 	right: 3px;
+ 	width: 110px;
+ 	border: 0 none;
+ 	top: 3px;
+ 	}
+ .check a{
+ 	color: #38f;
+ }
+ .check input{
+ 	margin:0;
+ 	vertical-align: middle;
+ }
+ .check{
+ 	font-size: 12px;
+ }
+
+ .submit input{
+ 	margin-top: 30px;
+ 	width: 398px;
+ 	height: 54px;
+    color: #fff;
+    background: #e22;
+    border: 0;
+    font-size: 16px;
+    font-family: "Microsoft YaHei","Hiragino Sans GB";
+ }
+ .golin-centent{
+ 	float: left;
+ 	padding-right: 100px;
+    border-right: 1px solid #ddd;
+ }
+ .golin-aside{
+ 	float: left;
+ 	margin-left: 96px;
+ }
+ .golin-aside div{
+ 	margin-bottom: 30px;
+ }
+ .aside-m .a-i{
+	background: url(../image/icon.png) 0px 120px;
+    width: 30px;
+    height: 29px;
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 15px;
+ }
+ .aside-m{
+ 	padding: 0px 0 30px 0;
+    border-bottom: 1px solid #ddd;
+    margin: 0 30px
+ }
+ .i-b{
+ 	background: url(../image/icon.png) -50px 120px;
+ 	display: inline-block;
+ 	width: 30px;
+ 	height: 30px;
+ 	margin-right:15px;
+ }
+ .aside-b{
+ 	padding: 0 30px;
+ }
+ .aside-b span{
+ 	display: inline-block;
+ }
+ .layout1{
+ 	margin: 0 auto;
+ 	width: 910px;
+ }
+ .f-ul{
+ 	list-style: none;
+ }
+ .f-ul li{
+ 	float: left;
+ 	padding: 0 16px;
+ 	border-right: 1px solid #ddd;
+ }
+ #footer a{
+ 	color: #999;
+ }
+ #footer{
+ 	margin: 20px 0;
+ 	font-size: 12px;
+ }
+#footer p{
+	text-align: center;
+}
+.f-ul .border{
+	border: none;
+}
+.ts{
+   width: 398px;
+   height: 30px;
+   line-height: 30px;
+}
+.error{
+    font-size: 12px;
+    margin-left: 20px;
+    color: #B70707;
+}
