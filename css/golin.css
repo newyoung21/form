@@ -148,7 +148,13 @@
  .aside-m{
  	padding: 0px 0 30px 0;
     border-bottom: 1px solid #ddd;
-    margin: 0 30px
+    margin: 0 30px;
+    position: relative;
+ }
+ .aside-m a{
+    *position: absolute;
+    *left:50px;
+    *top:10px;
  }
  .i-b{
  	background: url(../image/icon.png) -50px 120px;
@@ -159,9 +165,13 @@
  }
  .aside-b{
  	padding: 0 30px;
+    position: relative;
  }
  .aside-b span{
  	display: inline-block;
+    *position: absolute;
+    *left: 70px;
+    *top:0;
  }
  .layout1{
  	margin: 0 auto;

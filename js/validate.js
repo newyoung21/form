@@ -126,15 +126,19 @@ validate.prototype={
 					this.errorvaule = value;
 					this.errormessages = this.messages[name];
 				}
+				var $d =$(el).parent().next();
+					$err= $d.find('.error');
+
 				if(rule(value)===true){
-					var $err =$('.error');
 					$err.remove();
 					return false;
 
 				}
 
-			 
-				this.append();//显示错误信息
+			 	if($err.text()===""){
+			 		this.append();//显示错误信息
+			 	}
+				
 			
 
 	},
@@ -159,12 +163,10 @@ validate.prototype={
 					break;
 				}
 			}
-		if(this.formValid == false){
-			this.append();//显示错误信息
-		}else{
-			this.submit();
+		if(this.formValid == true){
+			this.submit();//提交信息
 		}
-		
+		this.append();//显示错误信息
 
 	},
 
