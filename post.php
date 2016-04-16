@@ -4,5 +4,5 @@
 	$staus = 'success';
 	$items = array('name'=>$name,'phone'=>$phone,'staus'=>$staus);
 		
-	echo json_encode($items);
+	return json_encode($items);
 ?>
