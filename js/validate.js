@@ -183,7 +183,7 @@ validate.prototype={
 	submit: function(){
 		var me = this;
 		$.ajax({
-			url: 'post.php',
+			url: 'pp.php',
 			type: 'GET',
 			dataType: 'josn',
 			data: me.$form.serialize(),
