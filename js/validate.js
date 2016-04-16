@@ -188,12 +188,15 @@ validate.prototype={
 			type: 'GET',
 			dataType: 'josn',
 			data: me.$form.serialize(),
+			
 			success: function(data){
-				if(data.staus == 'success')
-					var b = $('<div class="ajax-stu">'+data.name+'<br/>'+'恭喜你注册成功'+'</div>');
-					$('body').append(b);
-                    
-			},
+					if(data.staus=='success'){
+						var d = $('<div class="ajax-stu">'+data.name+'恭喜你注册成功'+'</div>');
+						$('body').append(d);
+					}
+						    
+				},
+				
 			error: function(){
 				 alert('服务器出错了！')
 			}
