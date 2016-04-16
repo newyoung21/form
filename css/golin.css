@@ -216,3 +216,16 @@
     top:200px;
    left: 50%;
 }
+
+.ajax-stu{
+    position: fixed;
+    background-color: black;
+    color: white;
+    opacity: 0.3;
+    font-size: 28px;
+    height: 100%;
+    width: 100%;
+    top:0;
+    line-height: 600px;
+    text-align: center;
+}

@@ -1,8 +1,8 @@
 <?php
-	$name = $_GET['username'];
-	$phone = $_GET['phone'];
+	$name = $_POST['username'];
+	$phone = $_POST['phone'];
 	$staus = 'success';
-	// $items = array(name=>$name,phone=>$phone,staus=>$staus);
+	 $items = array('name'=>$name,'phone'=>$phone,'staus'=>$staus);
 		
-	echo $name;
+	echo json_encode($items);
 ?>

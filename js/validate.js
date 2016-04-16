@@ -37,7 +37,8 @@ validate.prototype={
 		},
 
 		emall: function(vaule){
-			return vaule.indexOf('@')>=0;
+			var em = /(\s)+[@]{1}(\s)+[.]{1}(\w)+/
+			return em.test(vaule);
 		},
 		phone: function(vaule){
 			var rep = /^1\d{10}$/
@@ -131,6 +132,7 @@ validate.prototype={
 
 				if(rule(value)===true){
 					$err.remove();
+					this.formValid=true;
 					return false;
 
 				}
@@ -166,7 +168,10 @@ validate.prototype={
 		if(this.formValid == true){
 			this.submit();//提交信息
 		}
-		this.append();//显示错误信息
+		if(this.formValid == false){
+			this.append();//显示错误信息
+		}
+		
 
 	},
 
@@ -179,15 +184,14 @@ validate.prototype={
 		var me = this;
 		console.log(me.$form.serialize());
 		$.ajax({
-			url: '../post.php',
-			type: 'GET',
+			url: 'post.php',
+			type: 'POST',
 			dataType: 'josn',
 			data: me.$form.serialize(),
-			succes: function(data){
-				console.log(data);
-				
-					$('<div class="ajax-stu">'+data+'恭喜你注册成功'+'</div>');
-				
+			success: function(data){
+				if(data.staus == 'success')
+					var b = $('<div class="ajax-stu">'+data.name+'<br/>'+恭喜你注册成功'+'</div>');
+					$('body').append(b);
                     
 			},
 			error: function(){
