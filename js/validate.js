@@ -185,7 +185,7 @@ validate.prototype={
 		$.ajax({
 			url: 'pp.php',
 			type: 'GET',
-			dataType: 'josn',
+			dataType: 'json',
 			data: me.$form.serialize(),
 			success: function(data){
 					if(data.staus=='success'){
