@@ -185,9 +185,9 @@ validate.prototype={
 			data: me.$form.serialize(),
 			succes: function(data){
 				console.log(data);
-				if(data.status == "success"){
-					$('<div class="ajax-stu">'+data.name+'恭喜你注册成功'+'</div>');
-				}
+				
+					$('<div class="ajax-stu">'+data+'恭喜你注册成功'+'</div>');
+				
                     
 			},
 			error: function(){
