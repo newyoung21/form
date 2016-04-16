@@ -191,6 +191,7 @@ validate.prototype={
 					if(data.staus=='success'){
 						var d = $('<div class="ajax-stu">'+data.name+'恭喜你注册成功'+'</div>');
 						$('body').append(d);
+						alert(data.name+'恭喜你注册成功');
 					}
 						    
 				},
