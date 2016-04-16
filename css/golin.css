@@ -208,3 +208,11 @@
     margin-left: 20px;
     color: #B70707;
 }
+.ajax-stu{
+    position: fixed;
+    width: 200px;
+    height: 200px;
+    background-color: blue;
+    top:200px;
+   left: 50%;
+}

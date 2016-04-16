@@ -177,13 +177,16 @@ validate.prototype={
 
 	submit: function(){
 		var me = this;
-		$.$.ajax({
-			url: '/',
+		console.log(me.$form.serialize());
+		$.ajax({
+			url: '../post.php',
 			type: ' POST',
 			dataType: 'josn',
 			data: me.$form.serialize(),
-			succes: function(response){
-				alert('提交成功')
+			succes: function(data){
+				if(data.status == "success"){
+					$('<div class="ajax-stu">'+data.name+'恭喜你注册成功'+'</div>');
+				}
                     
 			},
 			error: function(){
