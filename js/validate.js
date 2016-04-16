@@ -182,13 +182,11 @@ validate.prototype={
 
 	submit: function(){
 		var me = this;
-		console.log(me.$form.serialize());
 		$.ajax({
 			url: 'post.php',
 			type: 'GET',
 			dataType: 'josn',
 			data: me.$form.serialize(),
-			
 			success: function(data){
 					if(data.staus=='success'){
 						var d = $('<div class="ajax-stu">'+data.name+'恭喜你注册成功'+'</div>');
@@ -196,7 +194,7 @@ validate.prototype={
 					}
 						    
 				},
-				
+
 			error: function(){
 				 alert('服务器出错了！')
 			}
