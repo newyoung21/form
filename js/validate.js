@@ -184,6 +184,7 @@ validate.prototype={
 			dataType: 'josn',
 			data: me.$form.serialize(),
 			succes: function(data){
+				console.log(data);
 				if(data.status == "success"){
 					$('<div class="ajax-stu">'+data.name+'恭喜你注册成功'+'</div>');
 				}
