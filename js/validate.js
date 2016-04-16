@@ -37,7 +37,7 @@ validate.prototype={
 		},
 
 		emall: function(vaule){
-			var em = /(\s)+[@]{1}(\s)+[.]{1}(\w)+/
+			var em = /(\S)+[@]{1}(\S)+[.]{1}(\w)+/
 			return em.test(vaule);
 		},
 		phone: function(vaule){
