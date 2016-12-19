@@ -1,11 +1,11 @@
-function validate(){
-	this.init();
+function validate(form){ 
+	this.init(form);
 }
 
 validate.prototype={
 
-	init: function(){
-		this.$form = $('.form');
+	init: function(form){
+		this.$form = $(form);
 		this.selector = 'input[type=text],input[type=password],input[type=hidden],input[type=checkout],input[type=radio],select,textarea';
 		this.$input = this.$form.find(this.selector);
 		this.formValid = true;
